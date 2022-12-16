@@ -1,5 +1,5 @@
 # PixelCaveEU Website
-Download Files with this jar
+This is the website of PixelCaveEU (this project does not exist anymore)
 
 ## IMPORTANT!
 
