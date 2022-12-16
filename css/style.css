@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {margin: 0; padding: 0; height: 100%; text-align: center; scroll-behavior: smooth; overflow-y: scroll;}
+section {min-height: 100%;}
+a {text-decoration: none;}
+li {list-style-type: none;}
+h1, h2, h3, a {font-family: 'Poppins', sans-serif; font-size: 500; color: #1C1C1C;}
+h2 {color: #1C1C1C;}
+h3 {font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
+h4, p {font-family: 'Poppins', serif; color: #1C1C1C;}
+hr {width: 30px; height: 3px; background: #1C1C1C; border: 0; margin: 0 auto 40px auto;}
+#logo, li, img, .button {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+header nav svg{display: none;}
+
+/*** Header *******/
+
+header {width: 100%; height: 65px; position: fixed; top: 0; left: 0; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); z-index: 1;}
+#logo {width: 130px; float: left; margin: 6px 0 0 50px;}
+#name p {width: 70px; float: left; margin: 23px 0 0 -30px;}
+#logo img {width: 40%; border-radius: 5px;}
+#logo:hover {opacity: 0.5;}
+header nav {float: right; margin: 6px 50px 0 0;}
+header nav ul li {float: left; margin-left: 25px;}
+header nav ul li a {font-size: 16px;}
+header nav ul li:hover {padding-top: 5px;}
+
+/*** Home ********/
+#home {background: url(../img/background.png); background-position: center center; background-attachment: fixed; background-size: cover;}
+#home h1 {margin: 240px auto 0 auto; font-size: 110px;}
+#home h2 {margin: 0 auto 0 auto; font-size: 30px;}
+#home img { width: 150px; margin-top: 150px; opacity: 0.7;}
+#home img:hover {opacity: 1.0;}
+#home svg { width: 180px; margin-top: 90px; opacity: 0.7;}
+#home svg:hover {opacity: 1.0;}
+
+/*** About ********/
+
+#about {background-color: #f0f0f0;}
+#about img{width: 140px; border-radius: 5px;}
+#about h4{font-size: 25px;}
+#about img:hover{transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);}
+#about p{font-family: 'Poppins', sans-serif; width: 700px; margin: 0 auto 0 auto;}
+
+/*** Work ********/
+
+/**#work{background-color: #f0f0f0;}***/
+#work {background: url(../img/lobby.png); background-position: center center; background-size: cover; background-attachment: fixed;}
+#projects{width: 900px; margin: 0 auto 0 auto;}
+#projects ul{padding: 0;}
+#projects ul li{width: 33.3%; float: left; margin-bottom: 15px;}
+#projects img{width: 280; height: 150px; border-radius: 5px;}
+#projects img:hover{transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); box-shadow: 0 5px 5px rgba(0,0,0,0.3);}
+
+/*** Contact ********/
+
+form input, textarea {font-family: 'Poppins', serif; font-size: 15px; margin-bottom: 10px; border-radius: 2px; border: 2px solid;border-color: #494949;}
+form input:first-child{margin-top: 10px;}
+form input {width: 552px; height: 30px;}
+form textarea{width: 550px; height: 200px; resize: none;}
+.input_text{color: #494949; padding-left: 10px;}
+
+::-webkit-input-placeholder {color: #999999;}
+::-moz-placeholder {color: #999999;}
+:-ms-input-placeholder {color: #999999;}
+:-moz-placeholder {color: #999999;}
+
+.button{background: #f0f0f0; color: #494949; width: 566px; height: 50px;}
+.button:hover{background: #494949; color: #f0f0f0;} /****#494949***/
+
+/*** Footer ********/
+
+footer{width: 100%; height: 100px; background-color: #3f3f3f;}
+footer p{font-size: 13px; color: #f0f0f0;padding-top: 15px;}
+footer a{font-size: 13px; color: #f0f0f0;}
+
+/*** Tablets ********/
+@media screen and (max-width: 1024px) {
+    header{height: auto;}
+    #logo{width: 100px; margin-top: 5px; margin-left: 5px;}
+    header nav {margin-top: 0;}
+    #name p {width: 40px; float: left; margin: 13px 0 0 -20px;}
+    #home h1{font-size: 90px; margin-top: 200px;}
+    #home h2{font-size: 22px;}
+    h3{padding-top: 12%;}
+    #about p {width: 80%;}
+    #projects{width: auto;}
+    #projects ul li {width: 100%; float: none;}
+    #projects ul li:last-child{padding-bottom: 20%;}
+    #projects img{width: 55%; height: auto;}
+    form input, form textarea{width: 60%;}
+    .button{width: 62%;} 
+}
+
+@media screen and (max-width: 670px) {
+    #logo{width: 90px;margin-left: 30px;}
+    header nav{margin: 0; float: none;}
+    header nav svg{font-size: 17px; width: 100%; cursor: pointer; text-align: right; margin: 13px -180px 0 0; float: right; display: block;}
+    header nav svg:hover{opacity: 0.5;}
+    #home h1{font-size: 60px; margin-top: 200px;}
+    #home h2{width: 70%; height: auto;}
+    #home svg{height: 40px;}
+    header nav ul {height: 0; overflow: hidden; margin: 0; padding: 0; width: 100%;}
+    header nav ul.open {height: auto;}
+    header nav ul li{width: 100%; padding: 5px 0; margin: 0; font-size: 11px; border-top: 1px solid #dddddd;}
+    header nav ul li:hover{background-color: #eeeeee;}
+    #projects img{width: 70%; height: auto;}
+    form input, form textarea{width: 70%;}
+    .button{width: 74%;}
+}
+
+
+/*** Mobiles ********/
+@media screen and (max-width: 480px) {
+    #logo{width: 90px;margin-left: -15px;}
+    header nav{margin: 0; float: none;}
+    header nav svg{font-size: 17px; width: 100%; cursor: pointer; text-align: right; margin: 13px -180px 0 0; float: right; display: block;}
+    header nav svg:hover{opacity: 0.5;}
+    #home h1{font-size: 60px; margin-top: 200px;}
+    #home h2{width: 70%; height: auto;}
+    #home svg{height: 40px;}
+    header nav ul {height: 0; overflow: hidden; margin: 0; padding: 0; width: 100%;}
+    header nav ul.open {height: auto;}
+    header nav ul li{width: 100%; padding: 5px 0; margin: 0; font-size: 11px; border-top: 1px solid #dddddd;}
+    header nav ul li:hover{background-color: #eeeeee;}
+    #projects img{width: 70%; height: auto;}
+    form input, form textarea{width: 70%;}
+    .button{width: 74%;}
+}
+
+@media screen and (max-width: 380px) {
+    #logo{width: 90px;margin-left: -15px;}
+    #name p{font-size: 13px;margin: 15px 0 0 -19px;}
+    #about h3{font-size: 26px;}
+    #about h4{font-size: 23px;}
+    #about img{width: 100px;}
+    #work h3{font-size: 26px;}
+    #contact h3{font-size: 26px;}
+    header nav{margin: 0; float: none;}
+    header nav svg{font-size: 17px; width: 100%; cursor: pointer; text-align: right; margin: 13px -140px 0 0; float: right; display: block;}
+    header nav svg:hover{opacity: 0.5;}
+    #home h1{font-size: 40px; margin-top: 200px;}
+    #home h2{width: 70%; height: auto;}
+    #home svg{height: 40px;margin-top: 60px;}
+    header nav ul {height: 0; overflow: hidden; margin: 0; padding: 0; width: 100%;}
+    header nav ul.open {height: auto;}
+    header nav ul li{width: 100%; padding: 5px 0; margin: 0; font-size: 11px; border-top: 1px solid #dddddd;}
+    header nav ul li:hover{background-color: #eeeeee;}
+    #projects img{width: 70%; height: auto;}
+    form input, form textarea{width: 70%;}
+    .button{width: 74%;}
+}
+
+@media screen and (max-width: 300px) {
+    #logo{width: 70px;margin-left: -15px;}
+    #name p{font-size: 13px;margin: 11px 0 0 -15px;}
+    #about h3{font-size: 23px;}
+    #about h4{font-size: 20px;}
+    #about img{width: 100px;}
+    #work h3{font-size: 23px;}
+    #contact h3{font-size: 23px;}
+    header nav{margin: 0; float: none;}
+    header nav svg{font-size: 17px; width: 100%; cursor: pointer; text-align: right; margin: 7px -120px 0 0; float: right; display: block;}
+    header nav svg:hover{opacity: 0.5;}
+    #home h1{font-size: 40px; margin-top: 200px;}
+    #home h2{width: 70%; height: auto; font-size: 20px;}
+    #home svg{height: 35px; margin-top: 60px;}
+    header nav ul {height: 0; overflow: hidden; margin: 0; padding: 0; width: 100%;}
+    header nav ul.open {height: auto;}
+    header nav ul li{width: 100%; padding: 5px 0; margin: 0; font-size: 11px; border-top: 1px solid #dddddd;}
+    header nav ul li:hover{background-color: #eeeeee;}
+    #projects img{width: 70%; height: auto;}
+    form input, form textarea{width: 70%;}
+    .button{width: 74%;}
+}
